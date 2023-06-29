@@ -1,0 +1,76 @@
+    -	Login
+    -   Cart
+    -   Checkout
+
+
+Login - 
+
+1) blank username correct pass
+2) blank password correct UN
+3) invalid un valid pass
+4) invalid password valid UN
+7) both fields blank and click on Login button
+8) both invalid and click Login button
+9) both valid and click Login - Check for expected landing (Products) page
+10) Check if user logges out after 5 mins if session timeout is 5 mins.
+11) after login I copy url and paste in another browser, login seesion should continue
+12) validating for bountry value analysis for both Username and password text fields
+
+
+Cart - 
+
+1) Select the products and the number should be displayed the cart indicating how many products are selected to checkout
+2) Deselect the product. The number displayed on card should get reduced by the equal number of products that are deselected.
+3) After selecting the items click on cart icon, "Your Cart" page should be displayed with the list of selected items.
+4) Deselect the item by clicking on Remove button. Item should get vanished from "Your Cart" page and on Products page "Remove" button should 
+   be chaged back to "Add To Cart" button.
+5) User should be able to select all the items at one time and should be able to add to the cart.
+6) from "Your Cart" page user should be able to go back to Products page by clicking on "Continue Shopping" button.
+7) On "Your Cart" page when user clicks on item name which is a link, products details page should be displayed.
+8) Click on "Continue shopping" button, products page should be displayed.
+9) Check only the item/items selected on products page are getting displayed on "Your Cart" page with same details and price.
+
+
+Checkout-
+
+1) Click on CheckOut button.  "Checkout: Your Information" page should be displayed.  
+2) Fill in the valid details and click on Continue button, "Checkout: Overview" page should be displayed.
+3) Verify that only the items present on "Your Cart" page and if they are not removed from the list, should be displayed on "Checkout: Overview" page.
+4) On "Checkout: Your Information" page click on cancel button, "Your cart" page should be displayed.
+5) On "Checkout: Your Information" page click on Continue keeping the required filleds blank, "Error: First Name is required" error message should be displayed.
+6) check for availability of All Items, About, Logout and Reset App State links on top right corner of page for all the pages except login page
+7) After verifying the items related and payment related information click on Finish.  "Checkout: Complete!" page should be displayed with "Thank you for your order!"
+message.
+8) Click on "Back Home" button, use should be redirected to Products page.
+
+
+
+Note -
+
+1) For Automation only main flow for Login, Cart and Checkout is considered.
+2) Java script pop-up alert message automation is not required as it dosent appear while running the automation scripts.
+3) static or dynamic waits are not required in the scripts as application is quite fast and no issue with display of objects in expected time.
+4) I have covered end-to-end pytest framework though only for 3 test cases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
